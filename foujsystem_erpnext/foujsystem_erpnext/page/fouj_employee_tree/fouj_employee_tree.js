@@ -46,21 +46,6 @@ frappe.pages['fouj-employee-tree'].on_page_load = function(wrapper) {
 						condition: 'frappe.boot.user.can_create.indexOf("Employee") !== -1'
 					}
 				],
-				onrender(node) {
-					console.log("node", node)
-					let page = $(document);
-					console.log("page", page)
-					if(!node.is_root) {
-						frappe.db.get_value("Employee", node.data.value, "department")
-							.then((r) => {
-								if(r.message.department){
-									let x = page.find(`span[data-label="${node.data.value}"] .tree-label span.text-muted`);
-									console.log("x",x,x.text(` ${ x.text() } ( ${r.message.department} )`));
-									x.text(` ${ x.text() } ( ${r.message.department} )`);
-								}
-							})
-					}
-				}
 			}
 
 		new frappe.views.TreeView(options);
