@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include foujsystem_erpnext *.css
+recursive-include foujsystem_erpnext *.csv
+recursive-include foujsystem_erpnext *.html
+recursive-include foujsystem_erpnext *.ico
+recursive-include foujsystem_erpnext *.js
+recursive-include foujsystem_erpnext *.json
+recursive-include foujsystem_erpnext *.md
+recursive-include foujsystem_erpnext *.png
+recursive-include foujsystem_erpnext *.py
+recursive-include foujsystem_erpnext *.svg
+recursive-include foujsystem_erpnext *.txt
+recursive-exclude foujsystem_erpnext *.pyc

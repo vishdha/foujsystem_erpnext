@@ -1,0 +1,27 @@
+{
+ "content": null, 
+ "creation": "2018-04-09 13:35:58.715576", 
+ "docstatus": 0, 
+ "doctype": "Page", 
+ "icon": "fa fa-coin", 
+ "idx": 0, 
+ "modified": "2018-04-09 15:03:18.574316", 
+ "modified_by": "Administrator", 
+ "module": "Foujsystem Erpnext", 
+ "name": "fouj-employee-tree", 
+ "owner": "Administrator", 
+ "page_name": "FOUJ Employee Tree", 
+ "roles": [
+  {
+   "role": "HR Manager"
+  }, 
+  {
+   "role": "HR User"
+  }
+ ], 
+ "script": null, 
+ "standard": "Yes", 
+ "style": null, 
+ "system_page": 1, 
+ "title": "Fouj Employee Tree"
+}
