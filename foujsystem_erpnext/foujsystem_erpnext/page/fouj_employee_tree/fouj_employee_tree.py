@@ -16,7 +16,7 @@ def get_children(is_root=False, company=None,  parent=None):
 
 	employee = frappe.db.sql("""
 		select
-			name as value, CONCAT(employee_name, "(" , department, ")") as title,
+			name as value, CONCAT_WS(" ", employee_name, "/", department) as title,
 			exists(select name from `tabEmployee` where reports_to=emp.name) as expandable
 		from
 			`tabEmployee` emp
